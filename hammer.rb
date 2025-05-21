@@ -5,20 +5,20 @@
 class Hammer < Formula
   desc ""
   homepage ""
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://o.xdb.be/hammer/release/v0.0.5/hammer_Darwin_x86_64.tar.gz"
-      sha256 "05d5bbf047c4b591a732fde9eef68fe6abc1917be5643056223a5c463cd5a8a5"
+      url "https://o.xdb.be/hammer/release/v0.0.6/hammer_Darwin_x86_64.tar.gz"
+      sha256 "3946f707e17705448d8e59bb5847966de694df2a2e1e7fe5c1dc6ab24383ec3a"
 
       def install
         bin.install "hammer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://o.xdb.be/hammer/release/v0.0.5/hammer_Darwin_arm64.tar.gz"
-      sha256 "79acb81c396019dab5e4ad63ba67480abcb620531ad44d3f78f51f4e1eb0245d"
+      url "https://o.xdb.be/hammer/release/v0.0.6/hammer_Darwin_arm64.tar.gz"
+      sha256 "cbf4518ad6719884a1ad1316dd85f0f1c69e6fb8525345b3b7dc5c665220e9f9"
 
       def install
         bin.install "hammer"
@@ -28,15 +28,15 @@ class Hammer < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://o.xdb.be/hammer/release/v0.0.5/hammer_Linux_x86_64.tar.gz"
-      sha256 "e9b3062c673bd7c651a396b0a1829b3ff35f8d6e97850afc0a3cb80c22c64d1c"
+      url "https://o.xdb.be/hammer/release/v0.0.6/hammer_Linux_x86_64.tar.gz"
+      sha256 "0973651677b1546125eb2ae5f9dcf948f26186719df01d916f498e79e7302404"
       def install
         bin.install "hammer"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://o.xdb.be/hammer/release/v0.0.5/hammer_Linux_arm64.tar.gz"
-      sha256 "331392250b585681f18feb55e17ffd4f29a57684a904274c385a2c2425373c0b"
+      url "https://o.xdb.be/hammer/release/v0.0.6/hammer_Linux_arm64.tar.gz"
+      sha256 "f086f031dc9415e0b96bcf22a595dc5038d213376ea90df15a13c7b88cb710a8"
       def install
         bin.install "hammer"
       end
